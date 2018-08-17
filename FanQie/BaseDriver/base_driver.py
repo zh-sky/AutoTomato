@@ -38,7 +38,8 @@ class BaseDriver:
         print("http://127.0.0.1:"+port+"/wd/hub")
         driver = webdriver.Remote("http://127.0.0.1:"+port+"/wd/hub", desired_capabilities)
         time.sleep(10)
-        driver.switch_to.alert.accept()
+        if driver.is_app_installed('com.yodfz.FanQie') is not True:
+            driver.switch_to.alert.accept()
         return driver
 
     def Android_driver(self):
