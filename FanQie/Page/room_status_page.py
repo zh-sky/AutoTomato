@@ -54,10 +54,3 @@ class RoomStatusPage(BasePage):
         :return:
         """
         return self.get_by_element.get_element(self.section, 'done')
-
-    def get_back_element(self):
-        """
-        获取返回按钮
-        :return:
-        """
-        return self.get_by_element.get_element(self.section, 'back_button')

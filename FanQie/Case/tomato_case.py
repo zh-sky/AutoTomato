@@ -1,6 +1,8 @@
 import unittest
 from Business.login_business import LoginBusiness
 from Business.room_status_business import RoomStatusBusiness
+from Business.order_business import OrderBusiness
+from Business.finance_business import FinanceBusiness
 
 
 class ParameTestCase(unittest.TestCase):
@@ -11,6 +13,8 @@ class ParameTestCase(unittest.TestCase):
         ParameTestCase.driver = driver
         self.login_business = LoginBusiness(driver)
         self.room_status_business = RoomStatusBusiness(driver)
+        self.order_business = OrderBusiness(driver)
+        self.finance_business = FinanceBusiness(driver)
 
     @staticmethod
     def parametrize(testcase_class, driver=None):

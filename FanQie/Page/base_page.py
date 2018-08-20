@@ -19,6 +19,13 @@ class BasePage:
         # allow 提示框
         self.driver.switch_to_alert()
 
+    def get_back_button_element(self):
+        """
+        获取返回按钮元素
+        :return:
+        """
+        return self.get_by_element.get_element('base_element', 'back_button')
+
     def get_toast_element(self, message):
         """
         获取toast 元素信息
@@ -26,3 +33,30 @@ class BasePage:
         time.sleep(2)
         toast_element = ('xpath', "//*[contains(@text, "+message+")]")
         return WebDriverWait(self.driver, 10, 0.1).until(EC.presence_of_element_located(toast_element))
+
+    def get_screen_size(self):
+        """
+        获取屏幕宽高
+        :return:
+        """
+        screen_width = self.driver.get_window_size()['width']
+        screen_height = self.driver.get_window_size()['height']
+        return screen_width, screen_height
+# 向左边滑动
+
+    def swipe_left(self, x1, y, x2):
+        self.driver.swipe(x1, y, x2, y)
+
+    #向右边滑动
+    def swipe_right(self, x1, y, x2):
+        self.driver.swipe(x1, y, x2, y)
+
+    # 向上滑动
+    def swipe_up(self, x, y1, y2):
+        self.driver.swipe(x, y1, x, y2)
+
+    # 向下滑动
+    def swipe_bottom(self, x, y1, y2):
+        self.driver.swipe(x, y1, x, y2)
+
+

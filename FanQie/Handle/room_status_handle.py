@@ -63,7 +63,7 @@ class RoomStatusHandle:
         点击返回按钮
         :return:
         """
-        self.room_status_page.get_back_element().click()
+        self.room_status_page.get_back_button_element().click()
 
     def get_result_toast(self, message):
         """
