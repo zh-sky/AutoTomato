@@ -1,7 +1,7 @@
-from Case.tomato_case import ParameTestCase
+import BasePy
 
 
-class RoomStatusCase(ParameTestCase):
+class RoomStatusCase(BasePy.ParameTestCase):
 
     def test_a_room_checkIn(self):
         """
@@ -11,6 +11,7 @@ class RoomStatusCase(ParameTestCase):
         checkIn_flag = self.room_status_business.check_in_room()
         self.assertTrue(checkIn_flag, '房间入住失败')
 
+    # @BasePy.my_skip
     def test_b_room_order(self):
         """
         测试房态页面 预定房间
@@ -19,6 +20,7 @@ class RoomStatusCase(ParameTestCase):
         reserve_flag = self.room_status_business.reserve_room()
         self.assertTrue(reserve_flag, '房间预订失败')
 
+    # @BasePy.my_skip
     def test_c_back(self):
         """
         返回主页面

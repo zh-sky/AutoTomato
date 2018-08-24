@@ -10,6 +10,7 @@ class OrderBusiness:
         查看预抵订单
         :return:
         """
+        self.order_handle.click_order()
         self.order_handle.click_expect_arrive()
         if self.order_handle.find_cell():
             return True
@@ -20,6 +21,7 @@ class OrderBusiness:
         查看预离订单
         :return:
         """
+        self.order_handle.click_order()
         self.order_handle.click_expect_leave()
         if self.order_handle.find_cell():
             return True

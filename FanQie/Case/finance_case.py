@@ -1,9 +1,9 @@
-from Case.tomato_case import ParameTestCase
+from BasePy.tomato_case import ParameTestCase
 
 
 class FinanceCase(ParameTestCase):
 
-    def test_a__date(self):
+    def test_a_date(self):
         """
         测试财务页面不同时间间隔内的收支
         :return:
@@ -31,3 +31,10 @@ class FinanceCase(ParameTestCase):
         :return:
         """
         self.assertTrue(self.finance_business.remember_other_income(), '其他收入记账失败')
+
+    def test_e_back_home(self):
+        """
+        财务页面返回主页
+        :return:
+        """
+        self.finance_business.back_home()

@@ -1,7 +1,7 @@
-from Case.tomato_case import ParameTestCase
+import BasePy
 
 
-class LoginCase(ParameTestCase):
+class LoginCase(BasePy.ParameTestCase):
 
     def test_login_success(self):
         """

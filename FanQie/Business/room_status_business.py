@@ -32,12 +32,12 @@ class RoomStatusBusiness:
         选择房间 -> 点击预定按钮 -> 输入联系人姓名和手机号 -> 完成 ->房态页面显示预定成功的房间
         :return:
         """
-        self.room_status_handle.click_room_status()
         time.sleep(2)
         self.room_status_handle.click_room_button(82)
         self.room_status_handle.click_reserve_button()
         self.room_status_handle.send_contact_username('测试预定')
         self.room_status_handle.send_contact_phone('132333335555')
+        self.room_status_handle.click_done_button()
         if self.room_status_handle.get_result_toast('房间预订成功'):
             return True
         return False

@@ -41,7 +41,7 @@ class RoomStatusHandle:
         输入联系人姓名
         :return:
         """
-        self.room_status_page.get_contact_user_element().send_keys(username)
+        self.room_status_page.get_contact_user_element()[0].send_keys(username)
 
     def send_contact_phone(self, phone):
         """
@@ -49,21 +49,21 @@ class RoomStatusHandle:
         :param phone:
         :return:
         """
-        self.room_status_page.get_contact_phone_element().send_keys(phone)
+        self.room_status_page.get_contact_phone_element()[0].send_keys(phone)
 
     def click_done_button(self):
         """
         点击完成按钮
         :return:
         """
-        self.room_status_page.get_done_element().click()
+        self.room_status_page.get_done_element()[0].click()
 
     def click_back_button(self):
         """
         点击返回按钮
         :return:
         """
-        self.room_status_page.get_back_button_element().click()
+        self.room_status_page.get_back_button_element()[0].click()
 
     def get_result_toast(self, message):
         """

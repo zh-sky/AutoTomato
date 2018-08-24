@@ -8,6 +8,13 @@ class OrderHandle:
     def __init__(self, driver, section):
         self.order_page = OrderPage(driver, section)
 
+    def click_order(self):
+        """
+        点击订单格子
+        :return:
+        """
+        self.order_page.get_order_button_element().click()
+
     def click_expect_arrive(self):
         """
         点击预抵
@@ -35,7 +42,7 @@ class OrderHandle:
         点击返回
         :return:
         """
-        self.order_page.get_back_button_element().click()
+        self.order_page.get_back_button_element()[0].click()
 
     def find_cell(self):
         """

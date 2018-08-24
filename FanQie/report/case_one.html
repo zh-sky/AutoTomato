@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>番茄来了测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-08-17 15:23:35</p>
-<p class='attribute'><strong>Duration:</strong> 0:01:19.934921</p>
-<p class='attribute'><strong>Status:</strong> Error 3</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-08-23 17:53:26</p>
+<p class='attribute'><strong>Duration:</strong> 0:03:45.237821</p>
+<p class='attribute'><strong>Status:</strong> Pass 7 Failure 1</p>
 
 <p class='description'>测试版的哦哦哦</p>
 </div>
@@ -221,34 +221,139 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>Case.room_status_case.RoomStatusCase</td>
-    <td>3</td>
+<tr class='passClass'>
+    <td>Case.login_case.LoginCase</td>
+    <td>2</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td>3</td>
-    <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_a_room_checkIn</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_error</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: id&gt;id_main_room
+pt1.1: id&gt;id_txfAccount
+id
+id_txfAccount
+id&gt;id_txfAccount
+id
+id_txfAccount
+id&gt;id_txfPwd
+id
+id_txfPwd
+id&gt;id_txfPwd
+id
+id_txfPwd
+id&gt;id_btnLogin
+id
+id_btnLogin
+id&gt;id_txfAccount
+id
+id_txfAccount
+id&gt;id_txfAccount
+id
+id_txfAccount
+id&gt;id_txfPwd
+id
+id_txfPwd
+id&gt;id_txfPwd
+id
+id_txfPwd
+id&gt;id_btnLogin
+id
+id_btnLogin
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_success</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: id&gt;id_txfAccount
+id
+id_txfAccount
+id&gt;id_txfAccount
+id
+id_txfAccount
+id&gt;id_txfPwd
+id
+id_txfPwd
+id&gt;id_txfPwd
+id
+id_txfPwd
+id&gt;id_btnLogin
+id
+id_btnLogin
+ios_predicate&gt;type == 'XCUIElementTypeButton' AND label == '消息'
+ios_predicate
+type == 'XCUIElementTypeButton' AND label == '消息'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>Case.room_status_case.RoomStatusCase</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',3)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_a_room_checkIn</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        pass</a>
+
+    <div id='div_pt2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.1: id&gt;id_main_room
 id
 id_main_room
-&lt;appium.webdriver.webelement.WebElement (session="76698895-43ec-49ce-862b-a18153aa83a3", element="19A74F5D-6EC1-44B4-84C3-2DF51E194002")&gt;
+&lt;appium.webdriver.webelement.WebElement (session="c131c1c2-0c73-403f-8f94-1e231d74c3d2", element="C129155C-7983-42A4-877F-AEDAD05413A0")&gt;
 id&gt;id_main_room
 id
 id_main_room
@@ -258,17 +363,15 @@ type=='XCUIElementTypeButton'
 id&gt;id_red_btn.png
 id
 id_red_btn.png
-id&gt;id_curTxf
-id
-id_curTxf
-Traceback (most recent call last):
-  File "/Users/mike/AutoTomato/FanQie/Case/room_status_case.py", line 11, in test_a_room_checkIn
-    checkIn_flag = self.room_status_business.check_in_room()
-  File "/Users/mike/AutoTomato/FanQie/Business/room_status_business.py", line 22, in check_in_room
-    self.room_status_handle.send_contact_username('测试入住')
-  File "/Users/mike/AutoTomato/FanQie/Handle/room_status_handle.py", line 44, in send_contact_username
-    self.room_status_page.get_contact_user_element().send_keys(username)
-AttributeError: 'NoneType' object has no attribute 'send_keys'
+ios_predicate&gt;type=='XCUIElementTypeTextField' AND value=='请输入联系人姓名'
+ios_predicate
+type=='XCUIElementTypeTextField' AND value=='请输入联系人姓名'
+ios_predicate&gt;type=='XCUIElementTypeTextField' AND value=='请输入联系人手机号'
+ios_predicate
+type=='XCUIElementTypeTextField' AND value=='请输入联系人手机号'
+ios_predicate&gt;type =='XCUIElementTypeButton' AND label=='完成'
+ios_predicate
+type =='XCUIElementTypeButton' AND label=='完成'
 
 
         </pre>
@@ -278,36 +381,36 @@ AttributeError: 'NoneType' object has no attribute 'send_keys'
     </td>
 </tr>
 
-<tr id='ft1.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_b_room_order</div></td>
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_b_room_order</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+        pass</a>
 
-    <div id='div_ft1.2' class="popup_window">
+    <div id='div_pt2.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.2: id&gt;id_main_room
+pt2.2: ios_predicate&gt;type=='XCUIElementTypeButton'
+ios_predicate
+type=='XCUIElementTypeButton'
+id&gt;id_green_btn.png
 id
-id_main_room
-None
-id&gt;id_main_room
-id
-id_main_room
-Traceback (most recent call last):
-  File "/Users/mike/AutoTomato/FanQie/Case/room_status_case.py", line 19, in test_b_room_order
-    reserve_flag = self.room_status_business.reserve_room()
-  File "/Users/mike/AutoTomato/FanQie/Business/room_status_business.py", line 35, in reserve_room
-    self.room_status_handle.click_room_status()
-  File "/Users/mike/AutoTomato/FanQie/Handle/room_status_handle.py", line 16, in click_room_status
-    self.room_status_page.get_room_status_element().click()
-AttributeError: 'NoneType' object has no attribute 'click'
+id_green_btn.png
+ios_predicate&gt;type=='XCUIElementTypeTextField' AND value=='请输入联系人姓名'
+ios_predicate
+type=='XCUIElementTypeTextField' AND value=='请输入联系人姓名'
+ios_predicate&gt;type=='XCUIElementTypeTextField' AND value=='请输入联系人手机号'
+ios_predicate
+type=='XCUIElementTypeTextField' AND value=='请输入联系人手机号'
+ios_predicate&gt;type =='XCUIElementTypeButton' AND label=='完成'
+ios_predicate
+type =='XCUIElementTypeButton' AND label=='完成'
 
 
         </pre>
@@ -317,32 +420,127 @@ AttributeError: 'NoneType' object has no attribute 'click'
     </td>
 </tr>
 
-<tr id='ft1.3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_c_back</div></td>
+<tr id='pt2.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_c_back</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >
+        pass</a>
 
-    <div id='div_ft1.3' class="popup_window">
+    <div id='div_pt2.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.3: ios_predicate&gt;name=='id_view' AND label=='返回'
+pt2.3: ios_predicate&gt;name=='id_view' AND label=='返回'
 ios_predicate
 name=='id_view' AND label=='返回'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='failClass'>
+    <td>Case.order_case.OrderCase</td>
+    <td>3</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',3)">Detail</a></td>
+</tr>
+
+<tr id='ft3.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_b_expected_leave</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
+        fail</a>
+
+    <div id='div_ft3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.1: id&gt;id_main_order
+id
+id_main_order
+id&gt;id_预离
+id
+id_预离
+ios_predicate&gt;type=='XCUIElementTypeCell'
+ios_predicate
+type=='XCUIElementTypeCell'
 Traceback (most recent call last):
-  File "/Users/mike/AutoTomato/FanQie/Case/room_status_case.py", line 26, in test_c_back
-    self.room_status_business.back_home()
-  File "/Users/mike/AutoTomato/FanQie/Business/room_status_business.py", line 50, in back_home
-    self.room_status_handle.click_back_button()
-  File "/Users/mike/AutoTomato/FanQie/Handle/room_status_handle.py", line 66, in click_back_button
-    self.room_status_page.get_back_element().click()
-AttributeError: 'list' object has no attribute 'click'
+  File "/Users/mike/AutoTomato/FanQie/Case/order_case.py", line 17, in test_b_expected_leave
+    self.assertTrue(self.order_business.check_expect_leave_order(), '预离订单数据有误')
+AssertionError: False is not true : 预离订单数据有误
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_c_back</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.2')" >
+        pass</a>
+
+    <div id='div_pt3.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.2: id&gt;id_searchField
+id
+id_searchField
+ios_predicate&gt;type=='XCUIElementTypeCell'
+ios_predicate
+type=='XCUIElementTypeCell'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_d_back</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.3')" >
+        pass</a>
+
+    <div id='div_pt3.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.3: ios_predicate&gt;name=='id_view' AND label=='返回'
+ios_predicate
+name=='id_view' AND label=='返回'
 
 
         </pre>
@@ -354,10 +552,10 @@ AttributeError: 'list' object has no attribute 'click'
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>3</td>
+    <td>8</td>
+    <td>7</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
-    <td>3</td>
     <td>&nbsp;</td>
 </tr>
 </table>

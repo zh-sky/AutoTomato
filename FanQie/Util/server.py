@@ -3,12 +3,13 @@ from Util.port import Port
 from Util.write_user_command import WriteUserCommand
 import threading
 import time
+import Util.common
 
 
 class Server:
     def __init__(self):
         self.dos = DosCmd()
-        self.device_list = self.dos.excute_cmd_result('idevice_id -l')
+        self.device_list = self.dos.excute_cmd_result(Util.common.find_device)
         self.write_file = WriteUserCommand()
         self.start_list = self.create_command_list()
 
@@ -50,7 +51,7 @@ class Server:
             appium_start = threading.Thread(target=self.start_server, args=(i,))
             appium_start.start()
         # 命令行启动需要一定的是时间，所以休眠一段时间以保证后续操作可以正常执行
-        time.sleep(20)
+        time.sleep(10)
 
 
 if __name__ == '__main__':

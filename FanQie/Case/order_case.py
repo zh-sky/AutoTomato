@@ -1,13 +1,13 @@
-from Case.tomato_case import ParameTestCase
+from BasePy.tomato_case import ParameTestCase
 
 
 class OrderCase(ParameTestCase):
-    def test_a_expected_arrive(self):
-        """
-        测试预抵订单显示
-        :return:
-        """
-        self.assertTrue(self.order_business.check_expect_arrive_order(), '预抵订单数据有误')
+    # def test_a_expected_arrive(self):
+    #     """
+    #     测试预抵订单显示
+    #     :return:
+    #     """
+    #     self.assertTrue(self.order_business.check_expect_arrive_order(), '预抵订单数据有误')
 
     def test_b_expected_leave(self):
         """

@@ -1,4 +1,5 @@
 from Handle.finance_handle import FinanceHandle
+import time
 
 
 class FinanceBusiness:
@@ -12,8 +13,10 @@ class FinanceBusiness:
         """
         self.finance_handle.click_finance_button()
         self.finance_handle.click_start_date_button()
-        self.finance_handle.finance_page.swipe_up(0.2, 0.9, 0.85)
-        self.finance_handle.click_confirm_date_button()
+        # time.sleep(1)
+        # self.finance_handle.swipe_up(0.2, 0.9, 0.85)
+        # time.sleep(1)
+        # self.finance_handle.click_confirm_date_button()
 
     def chose_end_date(self):
         """
@@ -21,7 +24,9 @@ class FinanceBusiness:
         :return:
         """
         self.finance_handle.click_end_date_button()
-        self.finance_handle.finance_page.swipe_up(0.2, 0.9, 0.8)
+        # time.sleep(1)
+        # self.finance_handle.swipe_up(0.2, 0.9, 0.8)
+        # time.sleep(1)
         self.finance_handle.click_confirm_date_button()
 
     def remember_good_sale(self):
@@ -59,7 +64,7 @@ class FinanceBusiness:
         self.finance_handle.click_other_income()
         self.finance_handle.send_money_textfield('30')
         self.finance_handle.click_save_button()
-        if self.finance_handle.get_result_toast('保存成功')
+        if self.finance_handle.get_result_toast('保存成功'):
             return True
         return False
 
